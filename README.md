@@ -1,10 +1,10 @@
-1) DayZReSkin Wiki
+1) DrewZ ReTeX Wiki
 Overview
-DayZReSkin is a Python/Qt-based tool developed to help DayZ server owners and modders easily retexture clothing, gear, and weapons. It provides a graphical interface to blend custom textures onto existing DayZ template assets, apply text or images, adjust brightness/contrast, generate scripts, and optionally pack everything into a PBO.
+DrewZ ReTeX is a Python/Qt-based tool developed to help DayZ server owners and modders easily retexture clothing, gear, and weapons. It provides a graphical interface to blend custom textures onto existing DayZ template assets, apply text or images, adjust brightness/contrast, generate scripts, and optionally pack everything into a PBO.
 
 This program can speed up the workflow of customizing items for DayZ modded servers. By focusing on a visual approach, you can see precisely how your retexture will look before exporting or converting to .paa format.
 
-Note: You must have an active VIP Tier 2 Patreon Subscription to use DayZReSkin. The Login Panel enforces this requirement upon startup.
+Note: You must have an active VIP Tier 2 Patreon Subscription to use DrewZ ReTeX. The Login Panel enforces this requirement upon startup.
 
 Prerequisites and Requirements
 DayZ (the game) installed.
@@ -21,11 +21,11 @@ If you do not meet all of these prerequisites, you will likely encounter errors 
 Installation & Setup
 Obtain the Program
 
-Download DayZReSkin (the .exe or the full bundle) from the official Patreon or Discord channel.
-Ensure you place it in a location with read/write permissions (e.g., C:\DayZModding\DayZReSkin\).
+Download DrewZ ReTeX (the .exe or the full bundle) from the official Patreon or Discord channel.
+Ensure you place it in a location with read/write permissions (e.g., C:\DayZModding\DrewZ ReTeX\).
 Launch & Login
 
-Double-click on DayZReSkin.exe (or main.py if using source code).
+Double-click on DrewZ ReTeX.exe (or main.py if using source code).
 A Login Panel will appear.
 Enter your credentials (associated with your Tier 2 Patreon subscription).
 Upon successful authentication, the main application window will open.
@@ -40,7 +40,7 @@ Open DayZ Tools from your Steam library.
 Use the Work Drive utility to mount the P:\ drive.
 Extract (unpack) DayZ’s game data to P:\DZ\ or your chosen project directory.
 Program Layout & Features
-Below is a high-level view of the DayZReSkin interface:
+Below is a high-level view of the DrewZ ReTeX interface:
 
 Select Template: Choose your base image (e.g., a blank .png or an extracted in-game texture from P:\DZ\Characters\…).
 Select Texture Folder: Choose the folder containing your custom textures (the images you wish to apply to the template).
@@ -48,7 +48,7 @@ Scan for Duplicates (optional): Quickly scans your texture folder for duplicated
 Select Output Folder: Where the final images (blended textures) will be saved.
 Logout: Exits the application or returns to the login panel.
 Instructions: Opens a separate instructions script/dialog.
-Join Discord: Opens the official DayZReSkin support Discord link.
+Join Discord: Opens the official DrewZ ReTeX support Discord link.
 Checkboxes
 
 Convert to .PAA: Whether to convert the final PNGs to .paa format using DayZ Tools.
@@ -163,7 +163,7 @@ Some antivirus or Windows permissions might block the tool from running.
 Advanced Functions & Code Insights
 The project’s Python code includes:
 
-main.py – The primary GUI logic for DayZReSkin:
+main.py – The primary GUI logic for DrewZ ReTeX:
 
 Login panel enforcement.
 UI layout with template preview, texture previews, etc.
@@ -176,9 +176,9 @@ BlendingHelper handles all blending modes (Normal, Multiply, Screen, Overlay, et
 ApplyTextureThread runs the bulk texture-application in the background.
 ConvertToPAAThread runs the .png → .paa conversions, optional script generation, and optional PBO packing.
 ResizableTextItem and ResizableIconItem let you drag, scale, or rotate text/images in the QGraphicsView.
-Those wanting to modify or extend DayZReSkin can customize these scripts. However, normal usage does not require code edits.
+Those wanting to modify or extend DrewZ ReTeX can customize these scripts. However, normal usage does not require code edits.
 
 Conclusion
-DayZReSkin provides a comprehensive, visual method to retexture DayZ items quickly. By leveraging a robust blending workflow, script auto-generation, and PBO packing, modders can drastically streamline the process of updating server content.
+DrewZ ReTeX provides a comprehensive, visual method to retexture DayZ items quickly. By leveraging a robust blending workflow, script auto-generation, and PBO packing, modders can drastically streamline the process of updating server content.
 
 Enjoy your modding workflow, and remember to maintain an active Tier 2 Patreon subscription for continued access and updates!
